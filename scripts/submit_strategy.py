@@ -195,6 +195,36 @@ def main() -> int:
         text=True,
     )
     if existing.returncode == 0:
+        # Branch already exists from a previous run. If it already contains the
+        # strategy file, switching to it would clobber the local untracked copy.
+        # Tell the student exactly what to do instead of letting `git checkout`
+        # bail with a low-level error.
+        on_branch = subprocess.run(
+            ["git", "ls-tree", "--name-only", branch, "--", rel],
+            cwd=REPO_ROOT,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if on_branch.returncode == 0 and on_branch.stdout.strip() == rel:
+            print(
+                f"\nERROR: branch '{branch}' already exists locally and already\n"
+                f"contains {rel}. This usually means a previous run of this script\n"
+                f"already submitted your strategy.\n\n"
+                f"Your options:\n"
+                f"  - To submit an updated version, switch to the existing branch and\n"
+                f"    commit your edits on top of it:\n"
+                f"        git stash push -- {rel}\n"
+                f"        git checkout {branch}\n"
+                f"        git stash pop\n"
+                f"        git add {rel} && git commit -m 'Update {name} strategy'\n"
+                f"        git push\n"
+                f"  - To start over from scratch, delete the local branch first\n"
+                f"    (this does NOT delete the remote branch or any open PR):\n"
+                f"        git branch -D {branch}\n"
+                f"    then re-run this script."
+            )
+            sys.exit(1)
         run(["git", "checkout", branch])
     else:
         run(["git", "checkout", "-b", branch, "origin/main"])

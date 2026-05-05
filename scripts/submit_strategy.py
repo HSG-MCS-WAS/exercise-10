@@ -40,28 +40,39 @@ def run(cmd: list[str], check: bool = True, capture: bool = False) -> subprocess
     return result
 
 
-def find_student_strategy() -> Path:
-    """Locate the single student-authored *_strategy.py the user wants to submit."""
-    tracked_on_main = set()
-    try:
-        out = subprocess.run(
-            ["git", "ls-tree", "-r", "--name-only", "origin/main", "was-tournament/wasstrategies/"],
-            cwd=REPO_ROOT,
-            check=True,
-            text=True,
-            capture_output=True,
-        ).stdout
-        tracked_on_main = {REPO_ROOT / line.strip() for line in out.splitlines() if line.strip()}
-    except subprocess.CalledProcessError:
-        print("warning: could not list files on origin/main; falling back to local-only detection")
+def _git_ignored(paths: list[Path]) -> set[Path]:
+    """Return the subset of `paths` that git ignores (per .gitignore)."""
+    if not paths:
+        return set()
+    rels = [p.relative_to(REPO_ROOT).as_posix() for p in paths]
+    # `git check-ignore` exits 0 if any path is ignored, 1 if none are, >1 on error.
+    result = subprocess.run(
+        ["git", "check-ignore", "--no-index", "--", *rels],
+        cwd=REPO_ROOT,
+        text=True,
+        capture_output=True,
+    )
+    if result.returncode not in (0, 1):
+        print(f"warning: `git check-ignore` failed: {result.stderr.strip()}")
+        return set()
+    ignored_rels = {line.strip() for line in result.stdout.splitlines() if line.strip()}
+    return {REPO_ROOT / r for r in ignored_rels}
 
-    candidates: list[Path] = []
-    for path in sorted(STRATEGIES_DIR.glob("*_strategy.py")):
-        if path.name == "sample_strategy.py":
-            continue
-        if path in tracked_on_main:
-            continue
-        candidates.append(path)
+
+def find_student_strategy() -> Path:
+    """Locate the single student-authored *_strategy.py the user wants to submit.
+
+    A file counts as student-authored when it is NOT gitignored and NOT the
+    sample. This excludes the LLM-generated reference strategies (which are
+    listed individually in .gitignore) without requiring any network access.
+    """
+    all_strategies = [
+        p for p in sorted(STRATEGIES_DIR.glob("*_strategy.py"))
+        if p.name != "sample_strategy.py"
+    ]
+    ignored = _git_ignored(all_strategies)
+
+    candidates = [p for p in all_strategies if p not in ignored]
 
     if not candidates:
         print(

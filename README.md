@@ -75,7 +75,6 @@ The repo ships with [.vscode/launch.json](.vscode/launch.json) so both scripts c
 3. Pick one of the configurations from the dropdown at the top:
     - **Run WAS Tournament** → runs [was-tournament/was_tournament.py](was-tournament/was_tournament.py) (the round-robin tournament with all auto-discovered strategies).
     - **Run WAS Tournament (builtin only)** → same script with `--builtin-only`: only the five Axelrod baselines, output files suffixed `_builtin`.
-    - **Run WAS Tournament (no LLM)** → same script with `--no-llm`: baselines + top-level student strategies, skipping `wasstrategies/llm_variants/`; output files suffixed `_no_llm`.
     - **Play Human-Inclusive Match** → runs [was-human-inclusive-match/was_human_inclusive_match.py](was-human-inclusive-match/was_human_inclusive_match.py) (play interactively against a `TitForTat` opponent).
     - **Submit Strategy as PR** → runs [scripts/submit_strategy.py](scripts/submit_strategy.py): creates a new branch `<your_name>-strategy`, commits your `*_strategy.py`, pushes it, and opens a PR to `main` via the GitHub CLI (`gh`). Codespaces has `gh` preauthenticated; locally run `gh auth login` once.
 4. Click the green ▶️ play button (or press `F5` to debug, `Ctrl+F5` to run without debugging).

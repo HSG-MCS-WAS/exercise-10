@@ -7,37 +7,177 @@ Interaction index,Player index,Opponent index,Repetition,Player name,Opponent na
 2,2,0,0,Tit For Tat,Cooperator,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
 3,0,3,0,Cooperator,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
 3,3,0,0,Grudger,Cooperator,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
-4,0,4,0,Cooperator,Random: 0.5,CCCCCCCCCC,-26,-20,10,-2.6,-2.0,0,True,10,6,4,0,0,6,0,3,0,0,0,0,0,1
-4,4,0,0,Random: 0.5,Cooperator,DCCCCDCCDD,-6,20,10,-0.6,2.0,1,False,6,6,0,4,0,4,2,0,0,2,1,0,0,0
-5,0,5,0,Cooperator,Jan,CCCCCCCCCC,-18,-10,10,-1.8,-1.0,0,True,10,8,2,0,0,7,0,2,0,0,0,0,0,1
-5,5,0,0,Jan,Cooperator,DDCCCCCCCC,-8,10,10,-0.8,1.0,1,False,8,8,0,2,0,7,0,0,0,1,1,0,0,0
-6,1,1,0,Defector,Defector,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
-6,1,1,0,Defector,Defector,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
-7,1,2,0,Defector,Tit For Tat,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
-7,2,1,0,Tit For Tat,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
-8,1,3,0,Defector,Grudger,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
-8,3,1,0,Grudger,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
-9,1,4,0,Defector,Random: 0.5,DDDDDDDDDD,-15,25,10,-1.5,2.5,1,False,0,0,0,5,5,0,0,0,0,0,5,0,4,0
-9,4,1,0,Random: 0.5,Defector,CCDDCCCDDD,-40,-25,10,-4.0,-2.5,0,True,5,0,5,0,5,0,0,3,2,0,0,1,3,1
-10,1,5,0,Defector,Jan,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
-10,5,1,0,Jan,Defector,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
-11,2,2,0,Tit For Tat,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
-11,2,2,0,Tit For Tat,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
-12,2,3,0,Tit For Tat,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
-12,3,2,0,Grudger,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
-13,2,4,0,Tit For Tat,Random: 0.5,CCCDDDDCCD,-25,-5,10,-2.5,-0.5,0,True,5,3,2,1,4,3,0,0,2,1,0,0,3,1
-13,4,2,0,Random: 0.5,Tit For Tat,CCDDDDCCDD,-20,5,10,-2.0,0.5,1,True,4,3,1,2,4,1,2,1,0,0,2,1,2,0
-14,2,5,0,Tit For Tat,Jan,CDDCDDCDDC,-29,-5,10,-2.9,-0.5,0,True,4,0,4,3,3,0,0,0,3,3,0,0,3,1
-14,5,2,0,Jan,Tit For Tat,DDCDDCDDCD,-24,5,10,-2.4,0.5,1,False,3,0,3,4,3,0,0,0,3,0,3,3,0,0
-15,3,3,0,Grudger,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
-15,3,3,0,Grudger,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
-16,3,4,0,Grudger,Random: 0.5,CDDDDDDDDD,-20,15,10,-2.0,1.5,1,True,1,0,1,4,5,0,0,0,1,0,4,0,4,0
-16,4,3,0,Random: 0.5,Grudger,DCDDDCCDCD,-35,-15,10,-3.5,-1.5,0,False,4,0,4,1,5,0,0,1,3,1,0,2,2,1
-17,3,5,0,Grudger,Jan,CDDDDDDDDD,-29,0,10,-2.9,0.0,0,True,1,0,1,1,8,0,0,0,1,0,1,0,7,1
-17,5,3,0,Jan,Grudger,DDCDDDDDDD,-29,0,10,-2.9,0.0,0,False,1,0,1,1,8,0,0,0,1,0,1,1,6,1
-18,4,4,0,Random: 0.5,Random: 0.5,CDCDDCCDDC,-22,0,10,-2.2,0.0,0,True,5,3,2,2,3,1,2,0,1,1,1,2,1,1
-18,4,4,0,Random: 0.5,Random: 0.5,DDCCCCCDDD,-22,0,10,-2.2,0.0,0,False,5,3,2,2,3,2,1,2,0,0,1,1,2,1
-19,4,5,0,Random: 0.5,Jan,CDCDCCCCDD,-20,0,10,-2.0,0.0,0,True,6,4,2,2,2,2,2,1,1,0,1,2,0,1
-19,5,4,0,Jan,Random: 0.5,DDCDCDCCCC,-20,0,10,-2.0,0.0,0,False,6,4,2,2,2,2,2,1,0,1,1,2,0,1
-20,5,5,0,Jan,Jan,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
-20,5,5,0,Jan,Jan,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
+4,0,4,0,Cooperator,Random: 0.5,CCCCCCCCCC,-30,-25,10,-3.0,-2.5,0,True,10,5,5,0,0,5,0,4,0,0,0,0,0,1
+4,4,0,0,Random: 0.5,Cooperator,CDCCCCDDDD,-5,25,10,-0.5,2.5,1,True,5,5,0,5,0,3,2,0,0,1,3,0,0,0
+5,0,5,0,Cooperator,DeepseekV4Flash,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+5,5,0,0,DeepseekV4Flash,Cooperator,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+6,0,6,0,Cooperator,Glm51,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+6,6,0,0,Glm51,Cooperator,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+7,0,7,0,Cooperator,KimiK26,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+7,7,0,0,KimiK26,Cooperator,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+8,0,8,0,Cooperator,MinimaxM2,CCCCCCCCCC,-18,-10,10,-1.8,-1.0,0,True,10,8,2,0,0,8,0,1,0,0,0,0,0,1
+8,8,0,0,MinimaxM2,Cooperator,CCCCCCCCDD,-8,10,10,-0.8,1.0,1,True,8,8,0,2,0,7,1,0,0,0,1,0,0,0
+9,0,9,0,Cooperator,Nemotron3Super,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+9,9,0,0,Nemotron3Super,Cooperator,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+10,0,10,0,Cooperator,Qwen35,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+10,10,0,0,Qwen35,Cooperator,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+11,0,11,0,Cooperator,Qwen3CoderNext,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+11,11,0,0,Qwen3CoderNext,Cooperator,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+12,0,12,0,Cooperator,WAS - Example: 0.5,CCCCCCCCCC,-30,-25,10,-3.0,-2.5,0,True,10,5,5,0,0,4,0,5,0,0,0,0,0,1
+12,12,0,0,WAS - Example: 0.5,Cooperator,CDDCDDCDCC,-5,25,10,-0.5,2.5,1,True,5,5,0,5,0,1,3,0,0,3,2,0,0,0
+13,1,1,0,Defector,Defector,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
+13,1,1,0,Defector,Defector,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
+14,1,2,0,Defector,Tit For Tat,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
+14,2,1,0,Tit For Tat,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
+15,1,3,0,Defector,Grudger,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
+15,3,1,0,Grudger,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
+16,1,4,0,Defector,Random: 0.5,DDDDDDDDDD,-18,20,10,-1.8,2.0,1,False,0,0,0,4,6,0,0,0,0,0,4,0,5,0
+16,4,1,0,Random: 0.5,Defector,CCDDDDCCDD,-38,-20,10,-3.8,-2.0,0,True,4,0,4,0,6,0,0,2,2,0,0,1,4,1
+17,1,5,0,Defector,DeepseekV4Flash,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
+17,5,1,0,DeepseekV4Flash,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
+18,1,6,0,Defector,Glm51,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
+18,6,1,0,Glm51,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
+19,1,7,0,Defector,KimiK26,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
+19,7,1,0,KimiK26,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
+20,1,8,0,Defector,MinimaxM2,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
+20,8,1,0,MinimaxM2,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
+21,1,9,0,Defector,Nemotron3Super,DDDDDDDDDD,-24,10,10,-2.4,1.0,1,False,0,0,0,2,8,0,0,0,0,0,2,0,7,0
+21,9,1,0,Nemotron3Super,Defector,CCDDDDDDDD,-34,-10,10,-3.4,-1.0,0,True,2,0,2,0,8,0,0,1,1,0,0,0,7,1
+22,1,10,0,Defector,Qwen35,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
+22,10,1,0,Qwen35,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
+23,1,11,0,Defector,Qwen3CoderNext,DDDDDDDDDD,-24,10,10,-2.4,1.0,1,False,0,0,0,2,8,0,0,0,0,0,2,0,7,0
+23,11,1,0,Qwen3CoderNext,Defector,CCDDDDDDDD,-34,-10,10,-3.4,-1.0,0,True,2,0,2,0,8,0,0,1,1,0,0,0,7,1
+24,1,12,0,Defector,WAS - Example: 0.5,DDDDDDDDDD,-18,20,10,-1.8,2.0,1,False,0,0,0,4,6,0,0,0,0,0,4,0,5,0
+24,12,1,0,WAS - Example: 0.5,Defector,DDDDDCCCCD,-38,-20,10,-3.8,-2.0,0,False,4,0,4,0,6,0,0,3,1,0,0,1,4,1
+25,2,2,0,Tit For Tat,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+25,2,2,0,Tit For Tat,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+26,2,3,0,Tit For Tat,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+26,3,2,0,Grudger,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+27,2,4,0,Tit For Tat,Random: 0.5,CDCDCDDDDD,-30,-5,10,-3.0,-0.5,0,True,3,0,3,2,5,0,0,0,3,2,0,0,4,1
+27,4,2,0,Random: 0.5,Tit For Tat,DCDCDDDDDD,-25,5,10,-2.5,0.5,1,False,2,0,2,3,5,0,0,0,2,2,1,0,4,0
+28,2,5,0,Tit For Tat,DeepseekV4Flash,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+28,5,2,0,DeepseekV4Flash,Tit For Tat,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+29,2,6,0,Tit For Tat,Glm51,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+29,6,2,0,Glm51,Tit For Tat,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+30,2,7,0,Tit For Tat,KimiK26,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+30,7,2,0,KimiK26,Tit For Tat,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+31,2,8,0,Tit For Tat,MinimaxM2,CCCCCCCCCD,-16,-5,10,-1.6,-0.5,0,True,9,8,1,0,1,8,0,0,1,0,0,0,0,1
+31,8,2,0,MinimaxM2,Tit For Tat,CCCCCCCCDD,-11,5,10,-1.1,0.5,1,True,8,8,0,1,1,7,1,0,0,0,1,0,0,0
+32,2,9,0,Tit For Tat,Nemotron3Super,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+32,9,2,0,Nemotron3Super,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+33,2,10,0,Tit For Tat,Qwen35,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+33,10,2,0,Qwen35,Tit For Tat,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+34,2,11,0,Tit For Tat,Qwen3CoderNext,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+34,11,2,0,Qwen3CoderNext,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+35,2,12,0,Tit For Tat,WAS - Example: 0.5,CCDDCDDCDC,-27,-5,10,-2.7,-0.5,0,True,5,1,4,3,2,1,0,0,3,3,0,0,2,1
+35,12,2,0,WAS - Example: 0.5,Tit For Tat,CDDCDDCDCD,-22,5,10,-2.2,0.5,1,True,4,1,3,4,2,0,1,0,3,1,2,2,0,0
+36,3,3,0,Grudger,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+36,3,3,0,Grudger,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+37,3,4,0,Grudger,Random: 0.5,CCCDDDDDDD,-22,5,10,-2.2,0.5,1,True,3,2,1,2,5,2,0,0,1,0,1,0,5,0
+37,4,3,0,Random: 0.5,Grudger,CCDDDDDCDC,-27,-5,10,-2.7,-0.5,0,True,4,2,2,1,5,1,1,0,1,0,1,2,3,1
+38,3,5,0,Grudger,DeepseekV4Flash,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+38,5,3,0,DeepseekV4Flash,Grudger,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+39,3,6,0,Grudger,Glm51,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+39,6,3,0,Glm51,Grudger,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+40,3,7,0,Grudger,KimiK26,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+40,7,3,0,KimiK26,Grudger,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+41,3,8,0,Grudger,MinimaxM2,CCCCCCCCCD,-16,-5,10,-1.6,-0.5,0,True,9,8,1,0,1,8,0,0,1,0,0,0,0,1
+41,8,3,0,MinimaxM2,Grudger,CCCCCCCCDD,-11,5,10,-1.1,0.5,1,True,8,8,0,1,1,7,1,0,0,0,1,0,0,0
+42,3,9,0,Grudger,Nemotron3Super,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+42,9,3,0,Nemotron3Super,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+43,3,10,0,Grudger,Qwen35,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+43,10,3,0,Qwen35,Grudger,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+44,3,11,0,Grudger,Qwen3CoderNext,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+44,11,3,0,Qwen3CoderNext,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+45,3,12,0,Grudger,WAS - Example: 0.5,CDDDDDDDDD,-14,25,10,-1.4,2.5,1,True,1,0,1,6,3,0,0,0,1,0,6,0,2,0
+45,12,3,0,WAS - Example: 0.5,Grudger,DDCCCCCCDD,-39,-25,10,-3.9,-2.5,0,False,6,0,6,1,3,0,0,5,1,0,1,1,1,1
+46,4,4,0,Random: 0.5,Random: 0.5,CCDDCCCCCD,-14,5,10,-1.4,0.5,1,True,7,6,1,2,1,4,2,1,0,1,1,0,0,0
+46,4,4,0,Random: 0.5,Random: 0.5,CCCCCCDCCD,-19,-5,10,-1.9,-0.5,0,True,8,6,2,1,1,4,2,2,0,1,0,0,0,1
+47,4,5,0,Random: 0.5,DeepseekV4Flash,CDDCCDDDDC,-24,0,10,-2.4,0.0,0,True,4,2,2,2,4,0,2,1,0,0,2,2,2,1
+47,5,4,0,DeepseekV4Flash,Random: 0.5,CCDDCCDDDD,-24,0,10,-2.4,0.0,0,True,4,2,2,2,4,2,0,0,2,1,0,0,4,1
+48,4,6,0,Random: 0.5,Glm51,DDCDCCDDCD,-35,-15,10,-3.5,-1.5,0,False,4,0,4,1,5,0,0,1,3,0,1,3,1,1
+48,6,4,0,Glm51,Random: 0.5,CDDDDDDDDD,-20,15,10,-2.0,1.5,1,True,1,0,1,4,5,0,0,0,1,0,4,0,4,0
+49,4,7,0,Random: 0.5,KimiK26,DCDCCCCCCC,-20,-5,10,-2.0,-0.5,0,False,8,5,3,2,0,5,0,1,1,2,0,0,0,1
+49,7,4,0,KimiK26,Random: 0.5,CDCDCCCCCD,-15,5,10,-1.5,0.5,1,True,7,5,2,3,0,4,1,0,2,2,0,0,0,0
+50,4,8,0,Random: 0.5,MinimaxM2,CDDDCCCCCD,-23,-5,10,-2.3,-0.5,0,True,6,4,2,1,3,3,1,1,1,0,1,1,1,1
+50,8,4,0,MinimaxM2,Random: 0.5,CCDDDCCCDD,-18,5,10,-1.8,0.5,1,True,5,4,1,2,3,3,1,0,1,1,1,0,2,0
+51,4,9,0,Random: 0.5,Nemotron3Super,DDCDDCCDDC,-16,15,10,-1.6,1.5,1,False,4,1,3,6,0,0,1,1,1,3,3,0,0,0
+51,9,4,0,Nemotron3Super,Random: 0.5,CCDCCDCCCD,-31,-15,10,-3.1,-1.5,0,True,7,1,6,3,0,1,0,3,3,2,0,0,0,1
+52,4,10,0,Random: 0.5,Qwen35,CDDDDDCDDC,-29,-5,10,-2.9,-0.5,0,True,3,1,2,1,6,0,1,0,1,0,1,2,4,1
+52,10,4,0,Qwen35,Random: 0.5,CCDDDDDDDD,-24,5,10,-2.4,0.5,1,True,2,1,1,2,6,1,0,0,1,0,1,0,6,0
+53,4,11,0,Random: 0.5,Qwen3CoderNext,DCCDCCCCCC,-16,0,10,-1.6,0.0,0,False,8,6,2,2,0,5,1,1,0,2,0,0,0,1
+53,11,4,0,Qwen3CoderNext,Random: 0.5,CCCCCCCCDD,-16,0,10,-1.6,0.0,0,True,8,6,2,2,0,5,1,2,0,0,1,0,0,1
+54,4,12,0,Random: 0.5,WAS - Example: 0.5,CCCDCDCCDD,-31,-15,10,-3.1,-1.5,0,True,6,2,4,1,3,1,1,2,2,1,0,1,1,1
+54,12,4,0,WAS - Example: 0.5,Random: 0.5,DCDCDDDCDD,-16,15,10,-1.6,1.5,1,False,3,2,1,4,3,0,2,0,1,3,1,0,2,0
+55,5,5,0,DeepseekV4Flash,DeepseekV4Flash,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+55,5,5,0,DeepseekV4Flash,DeepseekV4Flash,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+56,5,6,0,DeepseekV4Flash,Glm51,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+56,6,5,0,Glm51,DeepseekV4Flash,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+57,5,7,0,DeepseekV4Flash,KimiK26,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+57,7,5,0,KimiK26,DeepseekV4Flash,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+58,5,8,0,DeepseekV4Flash,MinimaxM2,CCCCCCCCCD,-16,-5,10,-1.6,-0.5,0,True,9,8,1,0,1,8,0,0,1,0,0,0,0,1
+58,8,5,0,MinimaxM2,DeepseekV4Flash,CCCCCCCCDD,-11,5,10,-1.1,0.5,1,True,8,8,0,1,1,7,1,0,0,0,1,0,0,0
+59,5,9,0,DeepseekV4Flash,Nemotron3Super,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+59,9,5,0,Nemotron3Super,DeepseekV4Flash,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+60,5,10,0,DeepseekV4Flash,Qwen35,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+60,10,5,0,Qwen35,DeepseekV4Flash,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+61,5,11,0,DeepseekV4Flash,Qwen3CoderNext,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+61,11,5,0,Qwen3CoderNext,DeepseekV4Flash,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+62,5,12,0,DeepseekV4Flash,WAS - Example: 0.5,CCDCCCCCDD,-18,0,10,-1.8,0.0,0,True,7,5,2,2,1,5,0,0,2,1,1,0,0,1
+62,12,5,0,WAS - Example: 0.5,DeepseekV4Flash,CDCCCCCDCD,-18,0,10,-1.8,0.0,0,True,7,5,2,2,1,3,2,1,1,2,0,0,0,1
+63,6,6,0,Glm51,Glm51,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+63,6,6,0,Glm51,Glm51,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+64,6,7,0,Glm51,KimiK26,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+64,7,6,0,KimiK26,Glm51,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+65,6,8,0,Glm51,MinimaxM2,CCCCCCCCCD,-16,-5,10,-1.6,-0.5,0,True,9,8,1,0,1,8,0,0,1,0,0,0,0,1
+65,8,6,0,MinimaxM2,Glm51,CCCCCCCCDD,-11,5,10,-1.1,0.5,1,True,8,8,0,1,1,7,1,0,0,0,1,0,0,0
+66,6,9,0,Glm51,Nemotron3Super,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+66,9,6,0,Nemotron3Super,Glm51,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+67,6,10,0,Glm51,Qwen35,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+67,10,6,0,Qwen35,Glm51,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+68,6,11,0,Glm51,Qwen3CoderNext,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+68,11,6,0,Qwen3CoderNext,Glm51,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+69,6,12,0,Glm51,WAS - Example: 0.5,CCDCDDDDDD,-23,5,10,-2.3,0.5,1,True,3,1,2,3,4,1,0,0,2,1,2,0,3,0
+69,12,6,0,WAS - Example: 0.5,Glm51,CDCDDDCDCD,-28,-5,10,-2.8,-0.5,0,True,4,1,3,2,4,0,1,0,3,1,1,2,1,1
+70,7,7,0,KimiK26,KimiK26,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+70,7,7,0,KimiK26,KimiK26,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+71,7,8,0,KimiK26,MinimaxM2,CCCCCCCCCD,-16,-5,10,-1.6,-0.5,0,True,9,8,1,0,1,8,0,0,1,0,0,0,0,1
+71,8,7,0,MinimaxM2,KimiK26,CCCCCCCCDD,-11,5,10,-1.1,0.5,1,True,8,8,0,1,1,7,1,0,0,0,1,0,0,0
+72,7,9,0,KimiK26,Nemotron3Super,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+72,9,7,0,Nemotron3Super,KimiK26,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+73,7,10,0,KimiK26,Qwen35,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+73,10,7,0,Qwen35,KimiK26,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+74,7,11,0,KimiK26,Qwen3CoderNext,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+74,11,7,0,Qwen3CoderNext,KimiK26,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+75,7,12,0,KimiK26,WAS - Example: 0.5,CDCCCDDDDD,-21,5,10,-2.1,0.5,1,True,4,2,2,3,3,2,0,0,2,1,2,0,2,0
+75,12,7,0,WAS - Example: 0.5,KimiK26,DCCCDDDCCD,-26,-5,10,-2.6,-0.5,0,False,5,2,3,2,3,1,1,2,1,1,1,1,1,1
+76,8,8,0,MinimaxM2,MinimaxM2,CCCCCCCCDD,-14,0,10,-1.4,0.0,0,True,8,8,0,0,2,7,1,0,0,0,0,0,1,1
+76,8,8,0,MinimaxM2,MinimaxM2,CCCCCCCCDD,-14,0,10,-1.4,0.0,0,True,8,8,0,0,2,7,1,0,0,0,0,0,1,1
+77,8,9,0,MinimaxM2,Nemotron3Super,CCCCCCCCDD,-8,10,10,-0.8,1.0,1,True,8,8,0,2,0,7,1,0,0,0,1,0,0,0
+77,9,8,0,Nemotron3Super,MinimaxM2,CCCCCCCCCC,-18,-10,10,-1.8,-1.0,0,True,10,8,2,0,0,8,0,1,0,0,0,0,0,1
+78,8,10,0,MinimaxM2,Qwen35,CCCCCCCCDD,-11,5,10,-1.1,0.5,1,True,8,8,0,1,1,7,1,0,0,0,1,0,0,0
+78,10,8,0,Qwen35,MinimaxM2,CCCCCCCCCD,-16,-5,10,-1.6,-0.5,0,True,9,8,1,0,1,8,0,0,1,0,0,0,0,1
+79,8,11,0,MinimaxM2,Qwen3CoderNext,CCCCCCCCDD,-11,5,10,-1.1,0.5,1,True,8,8,0,1,1,7,1,0,0,0,1,0,0,0
+79,11,8,0,Qwen3CoderNext,MinimaxM2,CCCCCCCCCD,-16,-5,10,-1.6,-0.5,0,True,9,8,1,0,1,8,0,0,1,0,0,0,0,1
+80,8,12,0,MinimaxM2,WAS - Example: 0.5,CCCDCDDCDD,-20,5,10,-2.0,0.5,1,True,5,2,3,4,1,2,0,0,3,2,1,0,1,0
+80,12,8,0,WAS - Example: 0.5,MinimaxM2,CCDCDDCDCC,-25,-5,10,-2.5,-0.5,0,True,6,2,4,3,1,1,1,1,2,2,1,1,0,1
+81,9,9,0,Nemotron3Super,Nemotron3Super,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+81,9,9,0,Nemotron3Super,Nemotron3Super,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+82,9,10,0,Nemotron3Super,Qwen35,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+82,10,9,0,Qwen35,Nemotron3Super,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+83,9,11,0,Nemotron3Super,Qwen3CoderNext,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+83,11,9,0,Qwen3CoderNext,Nemotron3Super,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+84,9,12,0,Nemotron3Super,WAS - Example: 0.5,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,8,0,1,0,0,0,0,0,1
+84,12,9,0,WAS - Example: 0.5,Nemotron3Super,CCCCCCCCDC,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,7,1,0,0,1,0,0,0,0
+85,10,10,0,Qwen35,Qwen35,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+85,10,10,0,Qwen35,Qwen35,CCCCCCCCCD,-12,0,10,-1.2,0.0,0,True,9,9,0,0,1,8,1,0,0,0,0,0,0,1
+86,10,11,0,Qwen35,Qwen3CoderNext,CCCCCCCCCD,-9,5,10,-0.9,0.5,1,True,9,9,0,1,0,8,1,0,0,0,0,0,0,0
+86,11,10,0,Qwen3CoderNext,Qwen35,CCCCCCCCCC,-14,-5,10,-1.4,-0.5,0,True,10,9,1,0,0,9,0,0,0,0,0,0,0,1
+87,10,12,0,Qwen35,WAS - Example: 0.5,CCDCCDCDCD,-22,0,10,-2.2,0.0,0,True,6,2,4,4,0,2,0,0,4,3,0,0,0,1
+87,12,10,0,WAS - Example: 0.5,Qwen35,CDCCDCDCDC,-22,0,10,-2.2,0.0,0,True,6,2,4,4,0,0,2,1,2,4,0,0,0,1
+88,11,11,0,Qwen3CoderNext,Qwen3CoderNext,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+88,11,11,0,Qwen3CoderNext,Qwen3CoderNext,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+89,11,12,0,Qwen3CoderNext,WAS - Example: 0.5,CCCCCCCCDD,-26,-15,10,-2.6,-1.5,0,True,8,5,3,0,2,5,0,2,1,0,0,0,1,1
+89,12,11,0,WAS - Example: 0.5,Qwen3CoderNext,CCCDCDCDDD,-11,15,10,-1.1,1.5,1,True,5,5,0,3,2,2,3,0,0,2,1,0,1,0
+90,12,12,0,WAS - Example: 0.5,WAS - Example: 0.5,CDCCCCDDCC,-25,-10,10,-2.5,-1.0,0,True,7,4,3,1,2,2,1,2,1,1,0,1,1,1
+90,12,12,0,WAS - Example: 0.5,WAS - Example: 0.5,CDCCDDDCDC,-15,10,10,-1.5,1.0,1,True,5,4,1,3,2,1,2,0,1,1,2,2,0,0

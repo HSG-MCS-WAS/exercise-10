@@ -127,6 +127,15 @@ def ensure_clean_or_only_strategy(strategy_path: Path) -> None:
         else:
             tracked.append(path)
 
+    # Filter out anything matched by .gitignore. Already-tracked files (e.g. CSVs/PNGs
+    # that were committed before being added to .gitignore) still appear in `git status`,
+    # but the user almost certainly doesn't want to be blocked by them.
+    all_paths = [REPO_ROOT / p for p in tracked + untracked]
+    ignored = _git_ignored(all_paths)
+    ignored_rels = {p.relative_to(REPO_ROOT).as_posix() for p in ignored}
+    tracked = [p for p in tracked if p not in ignored_rels]
+    untracked = [p for p in untracked if p not in ignored_rels]
+
     if not tracked and not untracked:
         return
 

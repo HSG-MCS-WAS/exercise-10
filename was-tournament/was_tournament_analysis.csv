@@ -1,0 +1,43 @@
+Interaction index,Player index,Opponent index,Repetition,Player name,Opponent name,Actions,Score,Score difference,Turns,Score per turn,Score difference per turn,Win,Initial cooperation,Cooperation count,CC count,CD count,DC count,DD count,CC to C count,CC to D count,CD to C count,CD to D count,DC to C count,DC to D count,DD to C count,DD to D count,Good partner
+0,0,0,0,Cooperator,Cooperator,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+0,0,0,0,Cooperator,Cooperator,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+1,0,1,0,Cooperator,Defector,CCCCCCCCCC,-50,-50,10,-5.0,-5.0,0,True,10,0,10,0,0,0,0,9,0,0,0,0,0,1
+1,1,0,0,Defector,Cooperator,DDDDDDDDDD,0,50,10,0.0,5.0,1,False,0,0,0,10,0,0,0,0,0,0,9,0,0,0
+2,0,2,0,Cooperator,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+2,2,0,0,Tit For Tat,Cooperator,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+3,0,3,0,Cooperator,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+3,3,0,0,Grudger,Cooperator,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+4,0,4,0,Cooperator,Random: 0.5,CCCCCCCCCC,-26,-20,10,-2.6,-2.0,0,True,10,6,4,0,0,6,0,3,0,0,0,0,0,1
+4,4,0,0,Random: 0.5,Cooperator,DCCCCDCCDD,-6,20,10,-0.6,2.0,1,False,6,6,0,4,0,4,2,0,0,2,1,0,0,0
+5,0,5,0,Cooperator,Jan,CCCCCCCCCC,-18,-10,10,-1.8,-1.0,0,True,10,8,2,0,0,7,0,2,0,0,0,0,0,1
+5,5,0,0,Jan,Cooperator,DDCCCCCCCC,-8,10,10,-0.8,1.0,1,False,8,8,0,2,0,7,0,0,0,1,1,0,0,0
+6,1,1,0,Defector,Defector,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
+6,1,1,0,Defector,Defector,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
+7,1,2,0,Defector,Tit For Tat,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
+7,2,1,0,Tit For Tat,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
+8,1,3,0,Defector,Grudger,DDDDDDDDDD,-27,5,10,-2.7,0.5,1,False,0,0,0,1,9,0,0,0,0,0,1,0,8,0
+8,3,1,0,Grudger,Defector,CDDDDDDDDD,-32,-5,10,-3.2,-0.5,0,True,1,0,1,0,9,0,0,0,1,0,0,0,8,1
+9,1,4,0,Defector,Random: 0.5,DDDDDDDDDD,-15,25,10,-1.5,2.5,1,False,0,0,0,5,5,0,0,0,0,0,5,0,4,0
+9,4,1,0,Random: 0.5,Defector,CCDDCCCDDD,-40,-25,10,-4.0,-2.5,0,True,5,0,5,0,5,0,0,3,2,0,0,1,3,1
+10,1,5,0,Defector,Jan,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
+10,5,1,0,Jan,Defector,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
+11,2,2,0,Tit For Tat,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+11,2,2,0,Tit For Tat,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+12,2,3,0,Tit For Tat,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+12,3,2,0,Grudger,Tit For Tat,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+13,2,4,0,Tit For Tat,Random: 0.5,CCCDDDDCCD,-25,-5,10,-2.5,-0.5,0,True,5,3,2,1,4,3,0,0,2,1,0,0,3,1
+13,4,2,0,Random: 0.5,Tit For Tat,CCDDDDCCDD,-20,5,10,-2.0,0.5,1,True,4,3,1,2,4,1,2,1,0,0,2,1,2,0
+14,2,5,0,Tit For Tat,Jan,CDDCDDCDDC,-29,-5,10,-2.9,-0.5,0,True,4,0,4,3,3,0,0,0,3,3,0,0,3,1
+14,5,2,0,Jan,Tit For Tat,DDCDDCDDCD,-24,5,10,-2.4,0.5,1,False,3,0,3,4,3,0,0,0,3,0,3,3,0,0
+15,3,3,0,Grudger,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+15,3,3,0,Grudger,Grudger,CCCCCCCCCC,-10,0,10,-1.0,0.0,0,True,10,10,0,0,0,9,0,0,0,0,0,0,0,1
+16,3,4,0,Grudger,Random: 0.5,CDDDDDDDDD,-20,15,10,-2.0,1.5,1,True,1,0,1,4,5,0,0,0,1,0,4,0,4,0
+16,4,3,0,Random: 0.5,Grudger,DCDDDCCDCD,-35,-15,10,-3.5,-1.5,0,False,4,0,4,1,5,0,0,1,3,1,0,2,2,1
+17,3,5,0,Grudger,Jan,CDDDDDDDDD,-29,0,10,-2.9,0.0,0,True,1,0,1,1,8,0,0,0,1,0,1,0,7,1
+17,5,3,0,Jan,Grudger,DDCDDDDDDD,-29,0,10,-2.9,0.0,0,False,1,0,1,1,8,0,0,0,1,0,1,1,6,1
+18,4,4,0,Random: 0.5,Random: 0.5,CDCDDCCDDC,-22,0,10,-2.2,0.0,0,True,5,3,2,2,3,1,2,0,1,1,1,2,1,1
+18,4,4,0,Random: 0.5,Random: 0.5,DDCCCCCDDD,-22,0,10,-2.2,0.0,0,False,5,3,2,2,3,2,1,2,0,0,1,1,2,1
+19,4,5,0,Random: 0.5,Jan,CDCDCCCCDD,-20,0,10,-2.0,0.0,0,True,6,4,2,2,2,2,2,1,1,0,1,2,0,1
+19,5,4,0,Jan,Random: 0.5,DDCDCDCCCC,-20,0,10,-2.0,0.0,0,False,6,4,2,2,2,2,2,1,0,1,1,2,0,1
+20,5,5,0,Jan,Jan,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1
+20,5,5,0,Jan,Jan,DDDDDDDDDD,-30,0,10,-3.0,0.0,0,False,0,0,0,0,10,0,0,0,0,0,0,0,9,1

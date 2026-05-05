@@ -8,11 +8,11 @@ What it does:
      (any *_strategy.py that isn't sample_strategy.py and isn't already on main).
   2. Creates a new branch named <name>-strategy.
   3. Commits the strategy file.
-  4. Pushes the branch and opens a Pull Request to main using `gh`.
+  4. Pushes the branch and prints a GitHub URL the student can click to open a
+     PR against main. (No `gh` CLI required — works on a vanilla devcontainer.)
 
 Requirements:
-  - `git` and `gh` (GitHub CLI) on PATH. In Codespaces both are preinstalled and
-    `gh` is already authenticated.
+  - `git` on PATH and an `origin` remote pointing at GitHub.
   - You've added exactly one new *_strategy.py file under was-tournament/wasstrategies/.
 """
 
@@ -214,33 +214,37 @@ def main() -> int:
 
     run(["git", "push", "-u", "origin", branch])
 
-    # Open the PR. If one already exists for this branch, `gh pr create` errors;
-    # fall back to viewing the existing PR.
-    pr = subprocess.run(
-        [
-            "gh",
-            "pr",
-            "create",
-            "--base",
-            "main",
-            "--head",
-            branch,
-            "--title",
-            f"Add {name} strategy",
-            "--body",
-            f"Submitting {name}'s strategy for the WAS Axelrod tournament.",
-        ],
-        cwd=REPO_ROOT,
-        text=True,
-    )
-    if pr.returncode != 0:
-        print("\n`gh pr create` failed (likely because a PR already exists). Showing it:")
-        run(["gh", "pr", "view", "--web"], check=False)
-    else:
-        run(["gh", "pr", "view", "--web"], check=False)
-
-    print("\nDone. Check the GitHub PR page that just opened.")
+    pr_url = build_pr_url(branch)
+    print("\n" + "=" * 70)
+    print("Branch pushed. Open this URL in your browser to create the PR:")
+    print(f"  {pr_url}")
+    print("=" * 70)
     return 0
+
+
+def build_pr_url(branch: str) -> str:
+    """Construct the GitHub 'open a PR' URL from the origin remote.
+
+    Works for both https://github.com/<owner>/<repo>(.git) and
+    git@github.com:<owner>/<repo>(.git) remote formats.
+    """
+    remote = subprocess.run(
+        ["git", "remote", "get-url", "origin"],
+        cwd=REPO_ROOT,
+        check=True,
+        text=True,
+        capture_output=True,
+    ).stdout.strip()
+
+    if remote.startswith("git@github.com:"):
+        slug = remote.removeprefix("git@github.com:")
+    elif remote.startswith("https://github.com/"):
+        slug = remote.removeprefix("https://github.com/")
+    else:
+        return f"(unrecognized remote {remote!r}; open your repo on GitHub and create a PR from branch '{branch}')"
+
+    slug = slug.removesuffix(".git")
+    return f"https://github.com/{slug}/pull/new/{branch}"
 
 
 if __name__ == "__main__":

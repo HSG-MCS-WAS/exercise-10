@@ -10,6 +10,7 @@ __pycache__/
 !.vscode/tasks.json
 .python-version
 .DS_Store
+.devcontainer/devcontainer-lock.json
 
 *was_payoff_matrix*.png
 *was_results*.png

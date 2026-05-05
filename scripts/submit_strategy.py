@@ -97,6 +97,13 @@ def derive_student_name(strategy_path: Path) -> str:
     return strategy_path.stem.removesuffix("_strategy")
 
 
+# Files that are commonly auto-generated and that students rarely want to commit.
+# When one of these shows up as dirty we suggest gitignoring it instead of staging it.
+KNOWN_GENERATED_FILES = {
+    ".devcontainer/devcontainer-lock.json",
+}
+
+
 def ensure_clean_or_only_strategy(strategy_path: Path) -> None:
     """Make sure the only uncommitted change is the strategy file itself."""
     out = subprocess.run(
@@ -106,19 +113,54 @@ def ensure_clean_or_only_strategy(strategy_path: Path) -> None:
         text=True,
         capture_output=True,
     ).stdout
-    dirty = []
     rel = strategy_path.relative_to(REPO_ROOT).as_posix()
+
+    tracked: list[str] = []   # modified/added/deleted/renamed tracked files
+    untracked: list[str] = []  # `??` entries
     for line in out.splitlines():
-        path = line[3:].strip()
-        if path != rel:
-            dirty.append(line)
-    if dirty:
-        print(
-            "ERROR: working tree has changes beyond your strategy file:\n"
-            + "\n".join(f"  {d}" for d in dirty)
-            + "\n\nPlease stash, revert, or commit those changes separately."
+        # Porcelain format: "XY path" — XY is 2 status chars, then a space, then the path.
+        status, path = line[:2], line[3:].strip()
+        if path == rel:
+            continue
+        if status == "??":
+            untracked.append(path)
+        else:
+            tracked.append(path)
+
+    if not tracked and not untracked:
+        return
+
+    lines = ["ERROR: working tree has changes beyond your strategy file.", ""]
+
+    if tracked:
+        lines.append("Tracked files with uncommitted edits:")
+        lines.extend(f"  {p}" for p in tracked)
+        lines.append("")
+        lines.append("  To set them aside temporarily:")
+        lines.append("      git stash push -- " + " ".join(tracked))
+        lines.append("  Or to commit them on a separate branch first:")
+        lines.append("      git checkout -b my-other-changes && git add <files> && git commit")
+        lines.append("")
+
+    if untracked:
+        lines.append("Untracked files that would also be left behind:")
+        lines.extend(f"  {p}" for p in untracked)
+        lines.append("")
+        lines.append("  To stash them along with tracked changes, use `git stash -u`.")
+        lines.append("  To delete them, use `git clean -f -- <path>` (irreversible).")
+        lines.append("")
+
+    generated_present = sorted(set(tracked + untracked) & KNOWN_GENERATED_FILES)
+    if generated_present:
+        lines.append(
+            "Note: the following files look auto-generated and are usually safe to add to .gitignore:"
         )
-        sys.exit(1)
+        lines.extend(f"  {p}" for p in generated_present)
+        lines.append("")
+
+    lines.append("Re-run this script once your working tree shows only the strategy file.")
+    print("\n".join(lines))
+    sys.exit(1)
 
 
 def main() -> int:

@@ -4,7 +4,7 @@
   "features": {
     "ghcr.io/va-h/devcontainers-features/uv:1": {}
   },
-  "postCreateCommand": "uv sync",
+  "postCreateCommand": "uv sync && test -x .venv/bin/python || { echo 'ERROR: uv sync did not create .venv/bin/python — VS Code launch configs will fail. Re-run: uv sync' >&2; exit 1; }",
   "customizations": {
     "vscode": {
       "extensions": [

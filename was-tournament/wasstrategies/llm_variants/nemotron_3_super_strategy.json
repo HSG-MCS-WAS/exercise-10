@@ -1,0 +1,18 @@
+{
+  "name": "Nemotron3Super",
+  "description": "Tit-for-two-tats: cooperate unless opponent defected twice in a row.",
+  "first_moves": [
+    "C"
+  ],
+  "rules": [
+    {
+      "when": {
+        "consecutive_opponent_defects": {
+          ">=": 2
+        }
+      },
+      "action": "D"
+    }
+  ],
+  "default": "C"
+}

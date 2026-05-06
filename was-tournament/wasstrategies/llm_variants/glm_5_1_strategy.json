@@ -1,0 +1,50 @@
+{
+  "name": "Glm51",
+  "description": "Adaptive retaliator: cooperates by default, retaliates to defection (TFT), escalates to permanent D against high-rate defectors after 3-round observation window, exploits never-defecting opponents on final turn",
+  "first_moves": [
+    "C"
+  ],
+  "rules": [
+    {
+      "when": {
+        "all": [
+          {
+            "opponent_defections": {
+              "==": 0
+            }
+          },
+          {
+            "round": {
+              ">=": 9
+            }
+          }
+        ]
+      },
+      "action": "D"
+    },
+    {
+      "when": {
+        "all": [
+          {
+            "round": {
+              ">=": 3
+            }
+          },
+          {
+            "opponent_defection_rate": {
+              ">=": 0.4
+            }
+          }
+        ]
+      },
+      "action": "D"
+    },
+    {
+      "when": {
+        "opponent_last": "D"
+      },
+      "action": "D"
+    }
+  ],
+  "default": "C"
+}

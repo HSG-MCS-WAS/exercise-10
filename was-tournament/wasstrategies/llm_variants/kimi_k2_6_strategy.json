@@ -1,0 +1,50 @@
+{
+  "name": "KimiK26",
+  "description": "Nice, retaliatory, and clear; exploits the terminal round and locks into defection against opponents with a sustained defection rate above 0.4 after round 5.",
+  "first_moves": [
+    "C"
+  ],
+  "rules": [
+    {
+      "when": {
+        "all": [
+          {
+            "total_turns": {
+              "!=": null
+            }
+          },
+          {
+            "round": {
+              ">=": 9
+            }
+          }
+        ]
+      },
+      "action": "D"
+    },
+    {
+      "when": {
+        "all": [
+          {
+            "opponent_defection_rate": {
+              ">": 0.4
+            }
+          },
+          {
+            "round": {
+              ">=": 5
+            }
+          }
+        ]
+      },
+      "action": "D"
+    },
+    {
+      "when": {
+        "opponent_last": "D"
+      },
+      "action": "D"
+    }
+  ],
+  "default": "C"
+}

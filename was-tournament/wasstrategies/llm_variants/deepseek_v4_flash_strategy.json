@@ -1,0 +1,33 @@
+{
+  "name": "DeepseekV4Flash",
+  "description": "TFT with end-game defection exploit - cooperate initially, retaliate immediately, defect on last round to gain advantage against nice strategies.",
+  "first_moves": [
+    "C"
+  ],
+  "rules": [
+    {
+      "when": {
+        "all": [
+          {
+            "total_turns": {
+              "!=": null
+            }
+          },
+          {
+            "round": {
+              ">=": 9
+            }
+          }
+        ]
+      },
+      "action": "D"
+    },
+    {
+      "when": {
+        "opponent_last": "D"
+      },
+      "action": "D"
+    }
+  ],
+  "default": "C"
+}

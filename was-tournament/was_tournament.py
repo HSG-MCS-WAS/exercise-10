@@ -57,7 +57,7 @@ builtin_strategies = [
     axl.Defector(),
     axl.TitForTat(),
     axl.Grudger(),
-    #axl.Random(0.5),
+    axl.Random(0.5),
 ]
 strategies = list(builtin_strategies)
 if not args.builtin_only:

@@ -1,0 +1,57 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run WAS Tournament",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/was-tournament/was_tournament.py",
+            "cwd": "${workspaceFolder}/was-tournament",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": true
+        },
+        {
+            "name": "Run WAS Tournament (builtin only)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/was-tournament/was_tournament.py",
+            "args": ["--builtin-only"],
+            "cwd": "${workspaceFolder}/was-tournament",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": true
+        },
+        {
+            "name": "Run WAS Tournament (no LLM)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/was-tournament/was_tournament.py",
+            "args": ["--no-llm"],
+            "cwd": "${workspaceFolder}/was-tournament",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": true
+        },
+        {
+            "name": "Play Human-Inclusive Match",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/was-human-inclusive-match/was_human_inclusive_match.py",
+            "cwd": "${workspaceFolder}/was-human-inclusive-match",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": true
+        },
+        {
+            "name": "Submit Strategy as PR",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/submit_strategy.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": true
+        }
+    ]
+}

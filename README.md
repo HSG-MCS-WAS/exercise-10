@@ -3,7 +3,7 @@
 Main repository for the Axelrod Tournament of the Web-based Autonomous Systems course at the University of St. Gallen. It uses the [Axelrod 4.14.0 Python library](https://pypi.org/project/Axelrod/) and is hosted at <https://github.com/HSG-MCS-WAS/exercise-10>.
 
 ## Table of Contents
--   [Quick start (for students)](#quick-start-for-students)
+-   [Quick start](#quick-start-for-students)
 -   [How to install Axelrod](#how-to-install-axelrod)
 -   [Running the scripts in VS Code](#running-the-scripts-in-vs-code)
 -   [WAS Axelrod Tournament Rules](#was-axelrod-tournament-rules)
@@ -12,7 +12,7 @@ Main repository for the Axelrod Tournament of the Web-based Autonomous Systems c
     2. [Play as a human to explore different strategies](#play-as-a-human-to-explore-different-strategies)
     3. [Implement and submit your own strategy](#implement-and-submit-your-own-strategy)
 
-## Quick start (for students)
+## Quick start 
 
 You have two options: open the repo in **GitHub Codespaces** (zero setup) or clone it **locally**.
 

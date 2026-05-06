@@ -1,37 +1,39 @@
 """Christof's strategy for the WAS Axelrod Tournament.
 
-Strategy: Cautious-Cooperator with Latch and Last-Round Defection (CCLLRD).
+Strategy: Latched Tit-for-Tat with Two-Round End-Game Defection.
 
 Tournament parameters (from README):
 - 10 rounds per match (very short — end-game effects matter)
 - Round-robin; each player also paired with own twin and Random(0.5)
 - Five baselines: TitForTat, Grudger, Defector, Cooperator, Random(0.5)
-- Plus auto-discovered student strategies and LLM variants
+- Plus auto-discovered student strategies (LLM-coached, mostly)
 - Payoff (signed prison-years; higher is better):
     C/C: -1 / -1     R = -1 (mutual cooperation)
     C/D: -5 /  0     S = -5 (sucker)
     D/C:  0 / -5     T =  0 (temptation)
     D/D: -3 / -3     P = -3 (mutual defection)
 
-Design rationale:
-- Open with C: enables mutual cooperation with TitForTat / Grudger / Cooperator
-  and any student strategies that mirror or reciprocate. Cost vs Defector is
-  only 2 points (-32 vs -30 across the match) — cheap insurance.
-- Last-round D (round 10 only): strict Pareto-improvement against any opponent
-  that does not also defect in the last round. Defecting on round 9 unravels
-  the cooperation chain and yields strictly worse outcomes against every TFT
-  variant; defecting only on round 10 is the safe end-game move.
-- Opening-defection tell: if the opponent defects on round 1, classify as
-  hostile (Defector / ALL-D) and switch to permanent D for the rest of the
-  match.
-- Heavy-defection threshold: after 3+ rounds, if the opponent has defected
-  >= 50% of the time, treat as Random or aggressive and switch to permanent D.
-- Latch on first own defection: once we have ever defected in a match, we keep
-  defecting until end-game. Prevents oscillation against Random and prevents
-  re-exploitation by toggling opponents. Forgiveness against truly noisy nice
-  opponents is sacrificed for robustness in a 10-round window.
-- The result is a strategy that is nice, retaliatory, clear, and exploits the
-  finite horizon without unraveling.
+Field assumption (calibrated to the WAS tournament):
+- ~80% of student strategies are LLM-coached and will include some end-game
+  defection (last 1-2 rounds is the most common LLM recommendation).
+- Pure TFT / pure Grudger appear only as the two baselines; rare among student
+  submissions.
+
+Design rationale (six rules, evaluated top to bottom):
+1. Round 1 → C. Enables mutual cooperation with every TFT-variant and pays
+   only -2 vs Defector (-32 vs -30) — cheap insurance.
+2. Rounds 9-10 (n>=8) → D. Two-round end-game. Against any opponent who also
+   defects in round 9 (likely in this field), R9 D prevents being exploited
+   for -5; against pure-TFT / pure-Grudger it costs 2 points but those are
+   minority. Going further to round 8 costs more than it gains.
+3. Once we have defected → D. Latch prevents oscillation against Random and
+   re-exploitation by toggling opponents. In a 10-round window, forgiveness
+   does not pay back its cost.
+4. Opening-defection tell → D. Opponent's R1 D is a strong Defector / ALL-D
+   signal. Permanent D from R2.
+5. Heavy-defection threshold (>=50% defects after 3+ rounds) → D. Catches
+   Random and aggressive opponents whose first move was C.
+6. Default → Tit-for-Tat. Mirror opponent's last move.
 """
 
 from axelrod.action import Action
@@ -57,7 +59,7 @@ class Christof(Player):
         if n == 0:
             return C
 
-        if n == 9:
+        if n >= 8:
             return D
 
         if self.defections > 0:

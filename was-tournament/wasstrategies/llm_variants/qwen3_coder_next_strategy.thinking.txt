@@ -1,0 +1,25 @@
+# model: qwen3-coder-next:cloud
+# generated: 2026-05-05T15:47:49
+# outcome: ok
+# response_chars: 800
+# thinking_chars: 0
+
+===== THINKING =====
+(no thinking trace returned)
+
+===== RESPONSE =====
+{
+  "name": "Qwen3CoderNext",
+  "description": "Nice-but-provocable, forgiving, and end-game aware: cooperate unless betrayed twice in a row or nearing terminal rounds; forgive occasional defects but retaliate persistently.",
+  "first_moves": ["C"],
+  "rules": [
+    {"when": {"round": 0}, "action": "C"},
+    {"when": {"all": [{"round": {"==": 9}}, {"opponent_last": "D"}]}, "action": "D"},
+    {"when": {"all": [{"round": {">=": 8}}, {"opponent_defections": {">": 0}}]}, "action": "D"},
+    {"when": {"consecutive_opponent_defects": {">=": 2}}, "action": "D"},
+    {"when": {"opponent_last": "D"}, "action": {"random_defect": 0.3}},
+    {"when": {"opponent_cooperations": {">": 0}}, "action": "C"},
+    {"when": {"consecutive_opponent_cooperates": {">=": 3}}, "action": "C"}
+  ],
+  "default": "C"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "MinimaxM2",
+  "description": "Nice TitForTat with end-game defection in last 2 rounds to exploit reciprocity",
+  "first_moves": [
+    "C"
+  ],
+  "rules": [
+    {
+      "when": {
+        "all": [
+          {
+            "total_turns": {
+              "==": 10
+            }
+          },
+          {
+            "round": {
+              ">=": 8
+            }
+          }
+        ]
+      },
+      "action": "D"
+    },
+    {
+      "when": {
+        "opponent_last": "D"
+      },
+      "action": "D"
+    }
+  ],
+  "default": "C"
+}

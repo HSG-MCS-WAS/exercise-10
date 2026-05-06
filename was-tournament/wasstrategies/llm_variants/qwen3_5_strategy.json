@@ -1,0 +1,41 @@
+{
+  "name": "Qwen35",
+  "description": "TFT with conditional end-game exploitation and high-defection abandonment",
+  "first_moves": [
+    "C"
+  ],
+  "rules": [
+    {
+      "when": {
+        "all": [
+          {
+            "round": {
+              "==": 9
+            }
+          },
+          {
+            "opponent_defection_rate": {
+              "<": 0.5
+            }
+          }
+        ]
+      },
+      "action": "D"
+    },
+    {
+      "when": {
+        "opponent_defection_rate": {
+          ">": 0.6
+        }
+      },
+      "action": "D"
+    },
+    {
+      "when": {
+        "opponent_last": "D"
+      },
+      "action": "D"
+    }
+  ],
+  "default": "C"
+}

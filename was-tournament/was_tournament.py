@@ -50,7 +50,17 @@ mode.add_argument(
     "the five built-in baselines and the top-level student strategies. "
     "Output files are suffixed with '_no_llm'.",
 )
+parser.add_argument(
+    "--runs",
+    type=int,
+    default=1,
+    help="Number of tournament repetitions to run. Axelrod plays every "
+    "match this many times and aggregates scores, wins, and morality "
+    "metrics (means across runs). Default: 1.",
+)
 args = parser.parse_args()
+if args.runs < 1:
+    parser.error("--runs must be >= 1")
 
 builtin_strategies = [
     axl.Cooperator(),
@@ -80,8 +90,13 @@ print(f"Available strategies: {strategies}")
 # Play on the prisoner's dilemma: a = -1, b = -5, c = 0, d = -3
 prisoners_dilemma = axl.game.Game(r=-1, s=-5, t=0, p=-3)
 
-# Create the tournament between strategy players with 10 turns
-tournament = axl.Tournament(strategies, game=prisoners_dilemma, turns=10, repetitions=1)
+# Create the tournament between strategy players with 10 turns.
+# `repetitions` re-plays every match N times; results.scores, wins,
+# and morality metrics are aggregated (means) across the N runs.
+print(f"Running tournament with {args.runs} repetition(s).")
+tournament = axl.Tournament(
+    strategies, game=prisoners_dilemma, turns=10, repetitions=args.runs
+)
 
 # Play the tournament
 results = tournament.play(filename=csv_path)
